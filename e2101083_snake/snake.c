@@ -6,7 +6,7 @@ struct snake move(struct snake s, int k) {
 	struct snake ns;	//ns new snake
 	ns.head = s.head;
 	ns.length = s.length;
-	if (k == UP) {
+	if (k == UP) { //this can be repeated for DOWN, RIGHT, LEFT
 		ns.head.y--;
 	}
 	ns.body[0] = s.head; //first body block takes the place/location of the head
